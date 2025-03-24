@@ -12,18 +12,93 @@
 /* Global CSS  */
 
 body {
+    font-family: "MedievalSharp";
+    margin: 0;
+    color: bisque;
+    font-size: 1.5rem;
+    background-image: url(../img/smoke-bg.jpg);
+}
+
+h2, h3 {
+    text-transform: uppercase;
+    font-family: "Gothic";
+    color: rgb(238, 219, 195);
+}
+
+h1 {
+    font-size: 3rem;
     font-family: "Gothic";
 }
 
-h1, h2, h3 {
-    text-transform: uppercase;
-    font-family: "MedievalSharp";
+ul {
+    list-style: none;
+}
+
+.menu-item-top {
+    text-decoration: none;
+    color: bisque;
+}
+
+.menu-items-top-container > li:last-of-type > a {
+    background-color: rgba(243, 211, 172, 0.907);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .cta {
     text-decoration: none;
 }
 
-.cta--secondary {
-    text-decoration: none;
+.cta--primary {
+    color: white;
+    border: 1px solid rgb(245, 210, 157);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.719);
+    padding: 20px;
 }
+
+video {
+    width: 100%;
+}
+
+/* Header  */
+.header {
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+
+#background-video {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.logo-top-container {
+    width: 200px;
+    height: auto;
+}
+
+.logo-bg3-header {
+    width: 100%;
+    height: auto;
+}
+.menu-items-top-container {
+    display: flex;
+    gap: 25px;
+}
+
+.header-banner-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    font-size: 2rem;
+}
+
