@@ -10,6 +10,10 @@
 }
 
 /* Global CSS  */
+*{
+    box-sizing: border-box;
+}
+
 
 body {
     font-family: "Gothic";
@@ -54,11 +58,11 @@ ul {
 .cta {
     text-decoration: none;
     font-family: "MedievalSharp";
+    color: rgb(245, 210, 157);
 }
 
 .cta--primary {
     color: white;
-    border: 1px solid rgb(245, 210, 157);
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.719);
     padding: 20px;
@@ -139,7 +143,6 @@ ul {
 }
 
 /* section races  */
-
 #races > h2:first-of-type {
     margin-left: 10%;
 }
@@ -177,8 +180,6 @@ ul {
 .race-container-right {
     border: 1px solid rgb(245, 210, 157);
     border-radius: 10px;
-    background-image: url(../img/races-bg.jpg);
-    background-size: cover;
     width: 30%;
     position: relative;
 }
@@ -260,4 +261,48 @@ ul {
     background-color: rgba(0, 0, 0, 0.429);
     padding: 10px;
     margin-left: 10px;
+}
+
+/* section news & update  */
+#new-update {
+    margin-top: 5%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.news-card-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.news-card {
+    border-radius: 10px;
+    width: 25%;
+    margin: 1.5%;
+    background-image: url(../img/news-1.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    position: relative;
+}
+
+.news-card:nth-of-type(2) {
+    background-image: url(../img/news-2.jpg);
+}
+
+.news-card:last-of-type {
+    background-image: url(../img/news-3.jpg);
+}
+
+.overlay-card   {
+    border-radius: 10px;
+    padding: 7.5%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.456);
+    z-index: -1;
 }
