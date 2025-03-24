@@ -178,6 +178,7 @@ ul {
     border: 1px solid rgb(245, 210, 157);
     border-radius: 10px;
     background-image: url(../img/races-bg.jpg);
+    background-size: cover;
     width: 30%;
     position: relative;
 }
@@ -220,4 +221,43 @@ ul {
     height: 5px;
     width: 42%;
     background-color: rgb(204, 176, 133);
+}
+
+/* section buynow */
+.buynow-container {
+    background-image: url(../img/buy-now-background.jpg);
+    background-size: cover;
+    margin-top: 5%;
+    position: relative;
+    height: 85vh;
+}
+
+.buynow-standard-img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+.buynow-standard-img > img {
+    width: 60%;
+    height: auto;
+}
+
+.buynow-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 25px;
+    padding-top: 15%;
+    width: 50%;
+    margin: 0 35%;
+}
+.cta-about-container > .cta--primary {
+    background-color: rgba(0, 0, 0, 0.429);
+    padding: 10px;
+    margin-left: 10px;
 }
