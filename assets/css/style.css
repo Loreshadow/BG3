@@ -12,22 +12,26 @@
 /* Global CSS  */
 
 body {
-    font-family: "MedievalSharp";
+    font-family: "Gothic";
     margin: 0;
     color: bisque;
     font-size: 1.5rem;
     background-image: url(../img/smoke-bg.jpg);
 }
 
-h2, h3 {
+h1, h2, h3 {
+    font-family: "MedievalSharp";
     text-transform: uppercase;
-    font-family: "Gothic";
-    color: rgb(238, 219, 195);
+    color: rgb(225, 183, 132);
+    margin: 0;
 }
 
 h1 {
     font-size: 3rem;
-    font-family: "Gothic";
+}
+
+p {
+    margin: 0;
 }
 
 ul {
@@ -37,6 +41,7 @@ ul {
 .menu-item-top {
     text-decoration: none;
     color: bisque;
+    font-family: "MedievalSharp";
 }
 
 .menu-items-top-container > li:last-of-type > a {
@@ -48,6 +53,7 @@ ul {
 
 .cta {
     text-decoration: none;
+    font-family: "MedievalSharp";
 }
 
 .cta--primary {
@@ -56,10 +62,6 @@ ul {
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.719);
     padding: 20px;
-}
-
-video {
-    width: 100%;
 }
 
 /* Header  */
@@ -100,5 +102,66 @@ video {
     position: absolute;
     bottom: 10%;
     font-size: 2rem;
+}
+
+/* section award  */
+#award {
+    margin: 5% auto;
+    background-image: url(../img/awards-bg.png);
+    border: 1px solid rgb(245, 210, 157);
+    border-radius: 5px;
+    padding: 10px;
+    width: 75%;
+}
+
+.award-container {
+    display: flex;
+}
+
+.award-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.award-container-img {
+    display: flex;
+    margin-left: 5%;
+    gap: 40%;
+    width: 15%;
+}
+
+.award-container-img > img {
+    width: 100%;
+    height: auto;
+}
+
+/* section races  */
+
+.race-container-left {
+    border: 1px solid rgb(245, 210, 157);
+    border-radius: 10px;
+    background-image: url(../img/races-bg.jpg);
+    width: 30%;
+}
+
+.race-img-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 10%;
+    gap: 25px;
+    width: 75%;
+}
+
+.race-img-left > img {
+    width: 20%;
+    margin-left: 2.5%;
+    position: relative;
+}
+
+.img-text {
+    
 }
 
