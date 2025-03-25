@@ -167,14 +167,24 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 10%;
-    gap: 25px;
     width: 75%;
+    margin-left: 15%;
+    font-family: "MedievalSharp";
+    font-size: 0.9rem;
 }
-.race-img-left > img {
-    width: 20%;
-    margin-left: 2.5%;
-    position: relative;
+
+.race-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 1.5%;
+}
+.race-img > img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
 }
 
 .race-container-right {
@@ -217,7 +227,7 @@ ul {
 .race-content-right::before {
     content: "";
     position: absolute;
-    top: 39.90%;
+    top: 43.90%;
     display: inline-block;
     height: 5px;
     width: 42%;
@@ -271,6 +281,12 @@ ul {
     align-items: center;
 }
 
+.news-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
 .news-card-container {
     display: flex;
     justify-content: center;
@@ -308,3 +324,25 @@ ul {
 }
 
 /* category gallery  */
+.gallery-heading {
+    text-align: right;
+    margin-right: 10%;
+}
+
+.gallery-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    width: 20%;
+}
+
+.gallery-card > img {
+    max-width: 100%;
+    width: 100%;
+}
