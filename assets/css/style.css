@@ -63,6 +63,8 @@ ul {
 
 .cta--primary {
     color: white;
+
+    border: 1px solid rgb(245, 210, 157);
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.719);
     padding: 20px;
@@ -345,4 +347,26 @@ ul {
 .gallery-card > img {
     max-width: 100%;
     width: 100%;
+}
+
+/* section background & overlay  */
+
+.overlay-container {
+    background-image: url(../img/cta-bg.png);
+    width: 75%;
+    padding: 5%;
+    margin: 5% auto;
+    border: 1px solid rgb(245, 210, 157);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.overlay-content {
+    width: 50%;
+}
+
+.overlay-content > p {
+    margin-bottom: 10%;
 }
