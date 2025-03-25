@@ -48,6 +48,7 @@ ul {
     text-decoration: none;
     color: bisque;
     font-family: "MedievalSharp";
+    transition: all 0.2s ease-in;
 }
 .menu-item:hover {
     color: rgb(241, 181, 107);
@@ -417,6 +418,7 @@ footer {
 .menu-item-bot {
     font-family: "Gothic";
     color: rgb(202, 164, 106);
+    transition: all 0.2s ease-in;
 }
 .menu-item-bot:hover {
     color: rgba(221, 156, 76, 0.804);
