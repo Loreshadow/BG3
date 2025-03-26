@@ -53,6 +53,10 @@ ul {
 .menu-item:hover {
     color: rgb(241, 181, 107);
 }
+.menu-icon {
+    visibility: hidden;
+    position: absolute;
+}
 
 .menu-items-top-container > li:last-of-type > a {
     background-color: rgba(243, 211, 172, 0.907);
@@ -283,7 +287,7 @@ ul {
     align-items: center;
     text-align: left;
     gap: 25px;
-    padding-top: 15%;
+    padding-top: 5%;
     width: 50%;
     margin: 0 35%;
 }
@@ -323,11 +327,9 @@ ul {
     z-index: -2;
     position: relative;
 }
-
 .news-card:nth-of-type(2) {
     background-image: url(../img/news-2.jpg);
 }
-
 .news-card:last-of-type {
     background-image: url(../img/news-3.jpg);
 }
@@ -365,7 +367,9 @@ ul {
 .gallery-card > img {
     max-width: 100%;
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 /* section background & overlay  */
@@ -375,6 +379,7 @@ ul {
     padding: 5%;
     margin: 5% auto;
     border: 1px solid rgb(245, 210, 157);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -430,7 +435,6 @@ footer {
     font-family: "MedievalSharp";
 }
 
-
 footer::before {
     content: "";
     display: inline-block;
@@ -455,3 +459,168 @@ footer::before {
 .footer-legal-info > ul > li > a {
     color: white;
 }
+
+/* ajout du responsive  */
+
+/* responsive tablet  */
+@media screen and (max-width: 768px) {
+    /* css general  */
+    ul {
+        padding: 0;
+    }
+    /* section header  */
+    .header {
+        margin-bottom: 15%;
+    }
+
+    nav > ul {
+        visibility: hidden;
+    }
+
+    .menu-icon {
+        visibility: visible;
+        width: 10%;
+        margin-left: 55%;
+        margin-top: 2%;
+        color: rgb(204, 176, 133);
+    }
+
+    /* section award  */
+    .award-container {
+        flex-direction: column;
+    }
+
+    .award-content {
+        align-items: flex-start;
+        padding: 0px;
+    }
+
+    .award-content > h2 {
+        padding-top: 0px;
+    }
+
+    .award-container-img {
+        width: 17%;
+    }
+    /* section race  */
+    .race-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .race-container-left {
+        width: 80%;
+    }
+
+    .race-img-left {
+        width: 90%;
+        height: 25%;
+        margin-left: 5%;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .race-container-right {
+        width: 80%;
+        padding-bottom: 10%;
+    }
+
+    .race-content-right > .decoration-line-container::after {
+        content: "";
+        top: 30%;
+        width: 50%;
+    }
+
+    /* section buynow  */
+    .buynow-container {
+        position: relative;
+        height: 110vh;
+    }
+
+    .buynow-standard-img {
+        position: absolute;
+        width: 65%;
+        bottom: -40%;
+        left: 25%;
+    }
+
+    .buynow-about {
+        margin: 0 auto;
+        width: 90%;
+        padding-top: 2.5%;
+    }
+    .buynow-about > p {
+        padding: 0;
+        font-size: 1.25rem;
+    }
+    .cta-about-container {
+        max-width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* section news & update  */
+    .news-card-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .news-heading {
+        width: 80%;
+        margin-left: 5%;
+    }
+    .news-card {
+        width: 80%;
+    }
+
+    /* section gallery & fanart  */
+    .gallery-card-container {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .gallery-card {
+        width: 40%;
+    }
+
+    /* section background-overlay  */
+    .overlay-container {
+        width: 95%;
+    }
+    .overlay-content {
+        width: 75%;
+    }
+    
+    /* footer  */
+    footer {
+        max-width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content-left {
+        text-align: center;
+        width: 100%;
+    }
+    .footer-content-right {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-legal-info > ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .buynow-standard-img {
+        position: absolute;
+        width: 65%;
+        bottom: -55%;
+        left: 25%;
+    }
+    }
